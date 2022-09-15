@@ -7,6 +7,10 @@
 
 /* reutilizaveis */
 
+html {
+    font-size: 16px;
+}
+
 .bi {
     font-size: 24px;
 }

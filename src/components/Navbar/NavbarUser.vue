@@ -16,7 +16,7 @@
         data() {
             return {
                 navbar: {
-                    'flex gap-6 text-gray-600':(this.nav_inline ? this.nav_inline : false),
+                    'flex gap-6 items-center text-gray-600 ml-auto mr-0':(this.nav_inline ? this.nav_inline : false),
                     'block text-center':(this.nav_block ? this.nav_block : false),
                 }
             }

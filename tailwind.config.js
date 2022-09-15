@@ -8,8 +8,14 @@ module.exports = {
     extend: {
       colors:{
         'primary':'#288D85',
-        'secondary': '#131313',
-      }
+        'secondary': '#191919',
+      },
+      container: {
+        center: true,
+      },
+      borderRadius: {
+        'base': '15px',
+      },
     },
   },
   plugins: [],

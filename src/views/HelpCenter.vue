@@ -1,6 +1,6 @@
 <script>
-    import Navbar from '@/components/NavbarComp.vue'
-    import Footer from '@/components/FooterComp.vue'
+    import Navbar from '@/components/Navbar/NavbarComp.vue'
+    import Footer from '@/components/Footer/FooterComp.vue'
     export default {
         data(){
             return {

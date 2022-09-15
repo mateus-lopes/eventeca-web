@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h2 :class="class_title()" class="py-4 font-bold">
+        <h1 :class="class_title()" class="py-4 text-primary font-bold">
             {{ title }}
-        </h2>
+        </h1>
     </div>
 </template>
 <script>
@@ -13,7 +13,7 @@ export default {
     },
     methods: {
         class_title() {
-            return this.size ? `text-${this.size}` : 'text-xl' 
+            return this.size ? `text-${this.size}` : 'text-2xl' 
         }
     }
 }
