@@ -27,4 +27,4 @@ npm run dev
 ```sh
 npm run build
 ```
-# Projeto-Bolsa---Eventeca
+# projeto da bolsa -> Sistema de Eventos
