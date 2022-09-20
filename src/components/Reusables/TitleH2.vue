@@ -13,7 +13,7 @@ export default {
     },
     methods: {
         class_title() {
-            return this.size ? `text-${this.size}` : 'text-xl' 
+            return this.size ? `text-${this.size}` : 'text-lg' 
         }
     }
 }

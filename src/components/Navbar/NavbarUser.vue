@@ -4,7 +4,7 @@
             <li class="">
                 <router-link to="/">Criar um Evento</router-link>
             </li>
-            <li class="my-2 py-1.5 px-16 bg-primary text-white rounded">
+            <li class="py-1.5 px-16 bg-primary text-white rounded">
                 <router-link to="/search-events">Entrar</router-link>
             </li>
         </ul>

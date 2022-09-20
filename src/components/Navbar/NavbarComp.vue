@@ -30,8 +30,8 @@ export default {
 }
 </script>
 <template>
-    <section class="shadow-lg mb-96 lg:py-4">
-        <header class="container flex justify-between items-center px-4 py-3 text-gray-600">
+    <section class="shadow-lg lg:py-4">
+        <header class="container max-w-screen-base flex justify-between items-center px-4 py-3 text-gray-600">
             <div class="flex justify-between lg:justify-start w-full lg:w-auto items-center gap-8">
                 <div>
                     <img src="../../assets/img/logo.png" alt="">
@@ -69,7 +69,10 @@ export default {
 </template> 
 
 
-<style>
+<style scoped>
+    .bi {
+        font-size: 24px;
+    }
     .nav-icon {
         font-size: 38px;
     }

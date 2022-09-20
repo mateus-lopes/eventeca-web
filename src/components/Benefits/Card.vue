@@ -9,27 +9,24 @@
             Icon,
         },
         props: {
-            url: String,
+            icon: String,
             title: String,
-            date: String,
-            is_save: Boolean,
+            content: String,
         }
     }
 </script>
 <template>
     <div>
-        <div class="max-w-screen-2xs">
-            <div>
-                <a href="#">
-                    <img class="rounded-base w-full" src="../../assets/img/teste_div.png" alt="">
-                </a>
-            </div>
-            <div class="">
+        <div class="max-w-md">
+            <div class="flex flex-col justify-center">
+                <div class="">
+                    <Icon :content="icon" class="text-5xl"/>
+                </div>
                 <router-link to="/">
-                    <TitleH1 size="lg" :title="title" />
+                    <TitleH1 size="lg" color="white" :title="title" />
                 </router-link>
                 <p class="font-light text-sm">
-                    {{ date }}
+                    {{ content }}
                 </p>
             </div>
         </div>

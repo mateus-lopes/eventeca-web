@@ -2,25 +2,25 @@
     <nav> 
         <ul :class="navbar">
             <LinkLi url="home-page" :page_selection="page_selection">
-                <div class='pr-8 md:px-0 my-5 flex'>
+                <div class='pr-8 md:px-0 my-3 flex'>
                     <Icon :small="small" content="bi bi-house" />
                     <router-link to="/">Página Inicial</router-link>
                 </div>    
             </LinkLi>
             <LinkLi url="search-events" :page_selection="page_selection">
-                <div class='pr-8 md:px-0 my-5 flex'>
+                <div class='pr-8 md:px-0 my-3 flex'>
                     <Icon :small="small" content="bi bi-people" />
                     <router-link to="/search-events">Encontre Eventos</router-link>
                 </div>                
             </LinkLi>
             <LinkLi url="my-events" :page_selection="page_selection">
-                <div class='pr-8 md:px-0 my-5 flex'>
+                <div class='pr-8 md:px-0 my-3 flex'>
                     <Icon :small="small" content="bi bi-bag-check" />
                     <router-link to="/my-events">Meus Eventos</router-link>
                 </div>
             </LinkLi>        
             <LinkLi url="help-center" :page_selection="page_selection">
-                <div class='pr-8 md:px-0 my-5 flex'>
+                <div class='pr-8 md:px-0 my-3 flex'>
                     <Icon :small="small" content="bi bi-question-circle" />
                     <router-link to="/help-center">Ajuda</router-link>
                 </div>

@@ -6,7 +6,7 @@
         },
         data(){
             return {
-                teste: {
+                teste2: {
                     url:'../../assets/img/teste_div.png',
                     title: '1° Workshop - Gestão em Serviços de Alimentação',
                     date: 'segunda-feira, 29 de agosto de 2022'
@@ -16,10 +16,10 @@
     }
 </script>
 <template>
-    <div class="flex gap-8">
-        <Card :title="teste.title" :url="teste.url" :date="teste.date" />
-        <Card :title="teste.title" :url="teste.url" :date="teste.date" />
-        <Card :title="teste.title" :url="teste.url" :date="teste.date" />
-        <Card :title="teste.title" :url="teste.url" :date="teste.date" />
+    <div class="grid grid-cols-4 gap-8">
+        <Card :title="teste2.title" :url="teste2.url" :date="teste2.date" />
+        <Card :title="teste2.title" :url="teste2.url" :date="teste2.date" />
+        <Card :title="teste2.title" :url="teste2.url" :date="teste2.date" />
+        <Card :title="teste2.title" :url="teste2.url" :date="teste2.date" />
     </div>
 </template>
