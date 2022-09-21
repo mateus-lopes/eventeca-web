@@ -7,7 +7,7 @@
     export default {
         data(){
             return {
-
+                animation_top: false
             }
         },
         components: {
@@ -19,6 +19,8 @@
         props: {
             page_selection: String,
             flex: String
+        },
+        methods: {
         }
     }
 </script>
@@ -59,7 +61,7 @@
                     </div>
                     <div class="pt-8 md:pt-0">
                         <TitleH2 title="Menu"/>
-                        <NavbarMain small="false" />
+                        <NavbarMain small="false" :page_selection="page_selection" />
                     </div>
                     <div class="pt-8 md:pt-0">
                         <TitleH2 title="Contato"/>
@@ -83,7 +85,7 @@
                         </div>
                     </div>
                     <div class="justify-center items-center md:justify-end hidden md:flex md:flex-col">
-                        <button class="bg-gray-200 w-14 h-14 flex justify-center items-center rounded-full">
+                        <button class="transition-all bg-gray-200 w-14 h-14 flex justify-center items-center rounded-full">
                             <img src="../../assets/img/icons/arrow-up.svg" alt="">
                         </button>
                     </div>
