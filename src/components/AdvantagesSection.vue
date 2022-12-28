@@ -1,57 +1,32 @@
-<template lang="">
-    <div>
-        <section class="mt-8 w-full bg-primary flex flex-wrap px-16 py-8 rounded-xl text-white">
-          <div class="lg:p-8 py-6 w-full md:w-2/4 lg:w-1/3">
-            <span>
-              <img src="../assets/img/ico-white.png" class="" alt="">
-            </span>
-            <h2 class="mb-3 text-lg">teste</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="lg:p-8 py-6 w-full md:w-2/4 lg:w-1/3">
-            <span>
-              <img src="../assets/img/ico-white.png" class="" alt="">
-            </span>
-            <h2 class="mb-3 text-lg">teste</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="lg:p-8 py-6 w-full md:w-2/4 lg:w-1/3">
-            <span>
-              <img src="../assets/img/ico-white.png" class="" alt="">
-            </span>
-            <h2 class="mb-3 text-lg">teste</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="lg:p-8 py-6 w-full md:w-2/4 lg:w-1/3">
-            <span>
-              <img src="../assets/img/ico-white.png" class="" alt="">
-            </span>
-            <h2 class="mb-3 text-lg">teste</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          
-          <div class="lg:p-8 py-6 w-full md:w-2/4 lg:w-1/3">
-            <span>
-              <img src="../assets/img/ico-white.png" class="" alt="">
-            </span>
-            <h2 class="mb-3 text-lg">teste</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-          <div class="lg:p-8 py-6 w-full md:w-2/4 lg:w-1/3">
-            <span>
-              <img src="../assets/img/ico-white.png" class="" alt="">
-            </span>
-            <h2 class="mb-3 text-lg">teste</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-      </section>
-    </div>
+<template>
+  <div class="bg-primary p-20 rounded-base text-white">
+      <div class="flex space-beteewn gap-8">
+          <AdvantagesCard title="Planejamento Online" icon="bi bi-laptop" :content="content" />
+          <AdvantagesCard title="Inscrições" icon="bi bi-people" :content="content" />
+          <AdvantagesCard title="Aplicativo do evento" icon="bi bi-phone" :content="content" />
+      </div>
+      <div class="flex space-beteewn gap-8 mt-16">
+          <AdvantagesCard title="Certificados" icon="bi bi-file-earmark-check" :content="content" />
+          <AdvantagesCard title="Husenberg" icon="bi bi-hand-index-thumb" :content="content" />
+          <AdvantagesCard title="Plataforma Segura" icon="bi bi-shield-check" :content="content" />
+      </div>
+  </div>
 </template>
+
 <script>
-export default {
-    
-}
+  import AdvantagesCard from './AdvantagesCard.vue';
+  export default {
+      components: {
+          AdvantagesCard,
+      },
+      data() {
+          return {
+              content: 'Lorem Ipsum is simply dummy text of the printing and is simply dummy text of the printing and typesetting.'
+          }
+      }
+  }
 </script>
-<style lang="">
-    
+
+<style>
+
 </style>

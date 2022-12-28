@@ -1,8 +1,6 @@
 <template lang="">
     <div class="pt-8 lg:pt-0">
-        <h2 class="text-xl">
-            {{title}}
-        </h2>
+        <TitleH2 :title="title" size="xl" />
         <ul class="flex flex-col gap-4 mt-4">
             <div v-for="item in items">
                 <LiLink :link='computedLink(item.id)'>
@@ -18,10 +16,11 @@
 
 <script>
 import LiLink from './LiLink.vue';
+import TitleH2 from './TitleH2.vue';
 
 
 export default {
-    components: { LiLink },
+    components: { LiLink, TitleH2 },
     props: {
         title: String,
         items: Array,

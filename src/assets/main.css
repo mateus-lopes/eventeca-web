@@ -1,3 +1,44 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/* FONT - POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+/* tailwind css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* reutilizaveis */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fadeIn {
+    animation: animation__fadeIn .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes animation__fadeIn {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    animation: animation__fadeOut .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes animation__fadeOut {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    } 
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

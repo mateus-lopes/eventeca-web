@@ -1,24 +1,20 @@
 <template lang="">
-    <div @click="goEvent" class="bg-white ">
+    <div @click="goEvent" class="bg-white">
         <div>
-            <img src="../../assets/img/example.jpg" class="w-full h-32 rounded-xl" alt="">
-        </div>
-        <div class="py-5 flex flex-col gap-1">
-            <div class="flex justify-between text-xs">
-                    <span class="text-primary">
-                        #Categoria
-                    </span>
-                    <span class="text-primary">
-                        00/00/0000
-                    </span>
+            <div class="max-w-screen-2xs">
+                <div>
+                    <a href="#">
+                        <img class="rounded-base w-full" src="../../assets/img/example.jpg" alt="">
+                    </a>
                 </div>
-            <h4 class="text-lg">
-                Titulo
-            </h4>
-            <div class="flex justify-between gap-8">
-                <p class="max-w-xs text-sm">
-                    Texto com no máximo 90 caracteres asdl kçjf laksçdj klças dasdlk jflak dsaçk fh jasd kla...
-                </p>
+                <div class="">
+                    <router-link to="/">
+                        <TitleH1 size="lg" :title="title" />
+                    </router-link>
+                    <p class="font-light text-sm">
+                        Segunda Feira, 9 de julho de 2022
+                    </p>
+                </div>
             </div>
         </div>
     </div>

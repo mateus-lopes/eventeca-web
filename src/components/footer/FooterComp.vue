@@ -1,6 +1,6 @@
 <template>
-    <main class="w-full mt-16  bg-gray-900 text-white">
-        <section class="container max-w-7xl mx-auto lg:flex gap-16 justify-between py-16">
+    <main class="w-full mt-16  bg-secondary text-white">
+        <section class="container max-w-7xl mx-auto lg:flex gap-16 justify-between pt-16">
             <!-- img logo / social medias -->
             <div class="w-full lg:w-4/12">
                 <ApresentationFooter></ApresentationFooter>
@@ -11,13 +11,18 @@
                 <GenericList title="Categorias" :items="categories"></GenericList>
                 <!-- navegation -->
                 <div class="pt-8 lg:pt-0">
-                    <h2 class="text-xl">
-                        Menu
-                    </h2>
+                    <TitleH2  title="Menu" size="xl"/>
                     <NavList :nav_inline="false" ></NavList>
                 </div>
                 <!-- contact -->
                 <GenericList :links=false title="Contato" :items="contact"></GenericList>
+            </div>
+        </section>
+        <section class="container max-w-7xl mx-auto md:flex justify-end pb-16 pt-8 lg:pt-0">
+            <div @click="return_to_top()" class="justify-center items-center md:justify-end hidden md:flex md:flex-col">
+                <button class="transition-all bg-gray-200 w-14 h-14 flex justify-center items-center rounded-full">
+                    <img src="../../assets/img/icons/arrow-up.svg" alt="">
+                </button>
             </div>
         </section>
         <EndFooter></EndFooter>
@@ -30,6 +35,7 @@ import SocialMedias from '../SocialMedias.vue';
 import NavList from '../navbar/NavList.vue';
 import GenericList from '../GenericList.vue';
 import LiLink from '../LiLink.vue';
+import TitleH2 from '../TitleH2.vue';
 import EndFooter from './EndFooter.vue';
 
 export default {
@@ -58,6 +64,7 @@ export default {
     components: {
     ApresentationFooter,
     SocialMedias,
+    TitleH2,
     NavList,
     GenericList,
     LiLink,
@@ -65,3 +72,5 @@ export default {
 }
 }
 </script>
+
+
