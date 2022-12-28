@@ -6,14 +6,14 @@
                     Página Inicial
                 </li>  
             </router-link>
-            <router-link to="/genres">
+            <router-link to="/events">
                 <li :class="css_link" class="bg-primary text-white">
-                    Gêneros
+                    Encontre Eventos
                 </li>
             </router-link>
-            <router-link to="/perfil">
+            <router-link to="/my-events">
                 <li :class="css_link" class="bg-primary text-white">
-                    Perfil
+                    Meus Eventos
                 </li>
             </router-link>
             <router-link to="/help">

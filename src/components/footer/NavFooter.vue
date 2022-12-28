@@ -9,9 +9,9 @@
                     Página Inicial
                 </li>  
             </router-link>
-            <router-link to="/genres">
+            <router-link to="/events">
                 <li>
-                    Gêneros
+                    Categorias
                 </li>
             </router-link>
             <router-link to="/perfil">
