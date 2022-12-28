@@ -1,13 +1,51 @@
 <template lang="">
-    <div class="flex mt-4">
-        <div class="w-full h-96 flex justify-center items-center bg-primary text-white rounded-xl">teste1</div>
-    </div>
+    <swiper
+            :slides-per-view="1"
+            :space-between="25"
+            :modules="modules" 
+            :pagination="true"
+        >
+            <swiper-slide>
+                <SpecialComp></SpecialComp>
+            </swiper-slide>
+            <swiper-slide>
+                <SpecialComp></SpecialComp>
+            </swiper-slide>
+            <swiper-slide>
+                <SpecialComp></SpecialComp>
+            </swiper-slide>
+        </swiper>
 </template>
+
 <script>
-export default {
+    // Import Swiper Vue.js components
+    import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
+
+    // Import Swiper styles
+    import 'swiper/css';
+    import "swiper/css/navigation"; 
+    import "swiper/css/grid";
     
-}
+    // import required modules
+    import { Navigation, Grid } from "swiper";
+    import SpecialComp from './SpecialComp.vue';
+
+    export default {
+        components: {
+            Swiper,
+            SwiperSlide,
+            SpecialComp
+        },
+        setup() {
+            const swiper = useSwiper();
+            return {
+                modules: [Navigation, Grid],
+                swiper,
+            };
+        },
+        data() {
+            return {
+            }
+        },
+    };
 </script>
-<style lang="">
-    
-</style>

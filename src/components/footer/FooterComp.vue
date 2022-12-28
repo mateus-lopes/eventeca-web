@@ -1,12 +1,12 @@
 <template>
-    <main class="w-full mt-8  bg-gray-900 text-white">
+    <main class="w-full mt-16  bg-gray-900 text-white">
         <section class="container max-w-7xl mx-auto lg:flex gap-16 justify-between py-16">
             <!-- img logo / social medias -->
-            <div class="w-4/12">
+            <div class="w-full lg:w-4/12">
                 <ApresentationFooter></ApresentationFooter>
                 <SocialMedias></SocialMedias>
             </div>
-            <div class="w-8/12 flex justify-end gap-32">
+            <div class="w-full lg:w-8/12 lg:flex justify-end gap-32">
                 <!-- categories -->
                 <GenericList title="Categorias" :items="categories"></GenericList>
                 <!-- navegation -->

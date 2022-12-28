@@ -1,23 +1,215 @@
 <template lang="">
-    <div class="overflow-hidden rounded-xl flex mt-4">
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
-          <div class="p-5 bg-primary text-white">categorias</div>
+    <div class="text-sm">
+        <swiper
+            class="md:hidden overflow-hidden rounded-xl"
+            :slides-per-view="3"
+            :space-between="0"
+            :modules="modules" 
+        >
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+        </swiper>
+        <swiper
+            class="hidden md:block lg:hidden overflow-hidden rounded-xl"
+            :slides-per-view="5"
+            :space-between="0"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+            :modules="modules"  
+        >
+            <!-- :navigation="true" -->
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+        </swiper>
+        <swiper
+            class="hidden lg:block xl:hidden overflow-hidden rounded-xl"
+            :slides-per-view="6"
+            :space-between="0"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+            :modules="modules"
+        >
+            <!-- :navigation="true" -->
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+        </swiper>
+        <swiper
+            class="xl:block hidden overflow-hidden rounded-xl"
+            :slides-per-view="8"
+            :space-between="0"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+            :modules="modules"
+        >
+        <!-- :navigation="true" :grid="true" -->
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <CategoryComp></CategoryComp>
+                        </swiper-slide>
+        </swiper>
     </div>
 </template>
+
 <script>
-export default {
+    // Import Swiper Vue.js components
+    import { Swiper, SwiperSlide, useSwiper } from 'swiper/vue';
+
+    // Import Swiper styles
+    import 'swiper/css';
+    import "swiper/css/navigation"; 
+    import "swiper/css/grid";
     
-}
+    // import required modules
+    import { Navigation, Grid } from "swiper";
+    import CategoryComp from './CategoryComp.vue';
+
+    export default {
+        components: {
+            Swiper,
+            SwiperSlide,
+            CategoryComp
+        },
+        setup() {
+            const swiper = useSwiper();
+            return {
+                modules: [Navigation, Grid],
+                swiper,
+            };
+        },
+        data() {
+            return {
+            }
+        },
+    };
 </script>
-<style lang="">
-    
+
+<style>
+    .swiper-button-next {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2em;
+        border-radius: 50%;
+    }
+    .swiper-button-next::after {
+        color: #fff;
+        font-size: 1.5em;
+    }
+    .swiper-button-prev {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2em;
+        border-radius: 50%;
+    }
+    .swiper-button-prev::after {
+        color: #fff;
+        font-size: 1.5em;
+    }
 </style>
