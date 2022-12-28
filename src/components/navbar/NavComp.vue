@@ -1,5 +1,6 @@
 <script>
-import NavbarMain from "./NavList.vue";
+import BtnNav from "./BtnNav.vue";
+import NavList from "./NavList.vue";
 
 export default {
   data() {
@@ -14,8 +15,9 @@ export default {
     };
   },
   components: {
-    NavbarMain,
-  },
+    NavList,
+    BtnNav
+},
   methods: {
     toogle_navbar() {
       console.log("toogle_navbar activate");
@@ -57,31 +59,25 @@ export default {
             <img src="../../assets/img/logo.png" class="h-10" alt="" />
           </router-link>
           <div class="hidden xl:block mr-4">
-            <NavbarMain/>
+            <NavList :header_navbar=true :nav_row=true />
           </div>
         </div>
         <!-- create event / user -->
         <div class="flex items-center">
           <!-- btn create event ( click -> dashboard-admin ) -->
           <div class="hidden md:flex items-center">
-            <router-link to="/login">
-              <button
-                class="hover:text-primary transition-all text-gray-800 rounded-3xl"
-              >
-                Criar Evento
-              </button>
-            </router-link>
+            <BtnNav link="/admin/login" :stroke=true>
+              Criar Evento
+            </BtnNav>
             <div class="w-0.5 h-10 mx-5 bg-gray-200 "></div>
           </div>
           <!-- btn user -->
-          <!-- <div v-if="is_logged">Seja bem vindo, {{ user.username }}</div> -->
-          <router-link to="/login">
-            <button
-              class="px-5 lg:px-7 py-3.5 hover:bg-gray-600 transition-all bg-primary text-white rounded-3xl"
-            >
+          <BtnNav link="/profile" v-if="user">
+            Nome do User
+          </BtnNav>
+          <BtnNav link="/login" v-else>
               Entrar
-            </button>
-          </router-link>
+          </BtnNav>
           <!-- btn mobile navbar -->
           <button @click="toogle_navbar" class="text-gray-900 ml-6 lg:ml-3 items-center xl:hidden">
               <svg
@@ -104,7 +100,7 @@ export default {
               <img src="../../assets/img/logo.png" class="h-10" alt="" />
             </div>
             <div class="flex justify-center items-center absolute top-0 left-0 right-0 bottom-0">
-              <NavbarMain :nav_inline="false" />
+              <NavList :header_navbar=true :nav_row=true />
             </div>
             <div class="flex justify-center items-center w-full fixed bottom-0 left-0">
               <div>

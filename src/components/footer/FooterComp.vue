@@ -8,25 +8,45 @@
             </div>
             <div class="w-8/12 flex justify-end gap-32">
                 <!-- categories -->
-                <CategoriesFooter></CategoriesFooter>
+                <GenericList title="Categorias" :items="categories"></GenericList>
                 <!-- navegation -->
-                <NavFooter></NavFooter>
+                <div class="pt-8 lg:pt-0">
+                    <h2 class="text-xl">
+                        Menu
+                    </h2>
+                    <NavList :nav_inline="false" ></NavList>
+                </div>
                 <!-- contact -->
-                <ContactList></ContactList>
+                <GenericList :links=false title="Contato" :items="contact"></GenericList>
             </div>
         </section>
-        
+        <EndFooter></EndFooter>
     </main>
 </template>
 
 <script>
-import CategoriesFooter from './CategoriesFooter.vue';
-import ContactList from './ContactList.vue';
-import NavFooter from './NavFooter.vue';
 import ApresentationFooter from './ApresentationFooter.vue';
 import SocialMedias from '../SocialMedias.vue';
+import NavList from '../navbar/NavList.vue';
+import GenericList from '../GenericList.vue';
+import LiLink from '../LiLink.vue';
+import EndFooter from './EndFooter.vue';
 
-    export default {
+export default {
+    data() {
+        return {
+            categories: [
+                {title:'Categoria 1', id:'###'},
+                {title:'Categoria 2', id:'###'},
+                {title:'Categoria 3', id:'###'}
+            ],
+            contact: [
+                {title:'Contato 1'},
+                {title:'Contato 2'},
+                {title:'Contato 3'}
+            ]
+        }
+    },
     props: {
         key_btn: Boolean
     },
@@ -35,6 +55,13 @@ import SocialMedias from '../SocialMedias.vue';
             window.scrollTo(0, 0);
         }
     },
-    components: { CategoriesFooter, NavFooter, ContactList, ApresentationFooter, SocialMedias }
+    components: {
+    ApresentationFooter,
+    SocialMedias,
+    NavList,
+    GenericList,
+    LiLink,
+    EndFooter
+}
 }
 </script>

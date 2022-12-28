@@ -1,28 +1,30 @@
 <template>
   <div>
     <header>
-      <NavbarComp />
+        <NavbarComp />
     </header>
     <main class="container max-w-7xl mx-auto">
-      <section class="mt-8">
-        <TitleList>Procurando algo em específico?</TitleList>
-        <CategoriesList></CategoriesList>
-      </section>
-      <section class="mt-6">
-        <TitleList>Eventos em Destaque</TitleList>
-        <EventsSpecial></EventsSpecial>
-      </section>
-      <section class="mt-8">
-        <TitleList>Categoria 1 da lista até a 3 (essa seleção pode ser por popularidade)</TitleList>
-        <EventsList></EventsList>
-      </section>
-      <AdvantagesSection></AdvantagesSection>
-      <section class="mt-8">
-        <TitleList>Nossos Parceiros</TitleList>
-        <FriendsSection></FriendsSection>
-      </section>
+        <section class="mt-8">
+            <TitleList>Procurando algo em específico?</TitleList>
+            <CategoriesList></CategoriesList>
+        </section>
+        <section class="mt-6">
+            <TitleList>Eventos em Destaque</TitleList>
+            <EventsSpecial></EventsSpecial>
+        </section>
+        <section class="mt-8">
+            <TitleList>Categoria 1 da lista até a 3 (essa seleção pode ser por popularidade)</TitleList>
+            <EventsList></EventsList>
+        </section>
+        <AdvantagesSection></AdvantagesSection>
+        <section class="mt-8">
+            <TitleList>Nossos Parceiros</TitleList>
+            <FriendsSection></FriendsSection>
+        </section>
     </main>
-    <Footer></Footer>
+    <footer>
+      <Footer></Footer>
+    </footer>
   </div>
 </template>
 
