@@ -1,13 +1,13 @@
 <template lang="">
     <div>
         <header>
-            <NavbarComp />
+            <NavbarComp page_selection="help" />
         </header>
         <main>
             help
         </main>
         <footer>
-            <Footer></Footer>
+            <Footer page_selection="help"></Footer>
         </footer>
     </div>
 </template>

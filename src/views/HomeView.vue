@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-        <NavbarComp />
+        <NavbarComp page_selection="/" />
         <section class="container max-w-7xl mx-auto pt-3">
           <InfoAlert></InfoAlert>
         </section>
@@ -15,7 +15,11 @@
             <EventsSpecial></EventsSpecial>
         </section>
         <section class="mt-16">
-            <TitleList>Categoria 1</TitleList>
+            <TitleList>
+              <router-link to="/teste">
+                Categoria 1
+              </router-link>
+            </TitleList>
             <EventsList></EventsList>
         </section>
         <section class="my-8">
@@ -33,7 +37,7 @@
         </section>
     </main>
     <footer>
-      <Footer></Footer>
+      <Footer page_selection="/"></Footer>
     </footer>
   </div>
 </template>

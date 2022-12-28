@@ -1,5 +1,5 @@
 <template lang="">
-    <div @click="goEvent" class="bg-white">
+    <div @click="goEvent" class="bg-white cursor-pointer">
         <div>
             <div class="max-w-screen-2xs">
                 <div>
@@ -9,7 +9,7 @@
                 </div>
                 <div class="">
                     <router-link to="/">
-                        <TitleH1 size="lg" :title="title" />
+                        <TitleH1 size="xl" title="Titulo do Evento" />
                     </router-link>
                     <p class="font-light text-sm">
                         Segunda Feira, 9 de julho de 2022
@@ -22,17 +22,22 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            movie: Object,
-        },
-        methods: {
-            goEvent() {
-                this.$router.push(`/event/`)
-            },
+import TitleH1 from '../TitleH1.vue';
+
+export default {
+    props: {
+        event: Object,
+    },
+    methods: {
+        goEvent() {
+            this.$router.push(`/event/`)
+        },    
             // returnImg(){
             //     return `https://image.tmdb.org/t/p/w500/${this.movie.poster_path}`
             // }
-        },
+    },
+    components: {
+        TitleH1,
+    }
     }
 </script>

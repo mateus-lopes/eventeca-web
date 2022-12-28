@@ -1,16 +1,16 @@
 <template>
     <nav class="w-full">
-        <ul class="flex flex-col gap-4 mt-4" :class="{'gap-0 mt-0 lg:flex-row lg:justify-center text-center': nav_row}">
-            <LiLink link="/" :style="css_link">
+        <ul class="flex flex-col gap-4" :class="{'gap-0 lg:flex-row lg:justify-center text-center': nav_row}">
+            <LiLink link="/" class="hover:text-primary" :style="css_link" :page_selection="page_selection">
                 Página Inicial
             </LiLink>
-            <LiLink link="/events" :style="css_link">
+            <LiLink link="events" class="hover:text-primary" :style="css_link" :page_selection="page_selection">
                 Encontre Eventos
             </LiLink>
-            <LiLink link="/my-events" :style="css_link">
+            <LiLink link="my-events" class="hover:text-primary" :style="css_link" :page_selection="page_selection">
                 Meus Eventos
             </LiLink>
-            <LiLink link="/help" :style="css_link">
+            <LiLink link="help" class="hover:text-primary" :style="css_link" :page_selection="page_selection">
                 Ajuda
             </LiLink>
         </ul>
@@ -30,6 +30,7 @@ export default {
     props: {
         nav_row: Boolean,
         header_navbar: Boolean,
+        page_selection: String,
     },
     components: { LiLink }
 }

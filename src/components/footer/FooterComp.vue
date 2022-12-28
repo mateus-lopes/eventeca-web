@@ -12,7 +12,7 @@
                 <!-- navegation -->
                 <div class="pt-8 lg:pt-0">
                     <TitleH2  title="Menu" size="xl"/>
-                    <NavList :nav_inline="false" ></NavList>
+                    <NavList :page_selection="page_selection" :nav_inline="false" ></NavList>
                 </div>
                 <!-- contact -->
                 <GenericList :links=false title="Contato" :items="contact"></GenericList>
@@ -54,7 +54,8 @@ export default {
         }
     },
     props: {
-        key_btn: Boolean
+        key_btn: Boolean,
+        page_selection: String,
     },
     methods: {
         return_to_top() {

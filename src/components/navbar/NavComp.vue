@@ -15,6 +15,9 @@ export default {
       // user: {},
     };
   },
+  props: {
+    page_selection: String
+  },
   components: {
     NavList,
     BtnNav,
@@ -65,7 +68,7 @@ export default {
               <img src="../../assets/img/logo.png" class="h-10" alt="" />
             </router-link>
             <div class="hidden xl:block mr-4">
-              <NavList :header_navbar=true :nav_row=true />
+              <NavList :page_selection="page_selection" :header_navbar=true :nav_row=true />
             </div>
           </div>
           <!-- create event / user -->
@@ -106,7 +109,7 @@ export default {
                 <img src="../../assets/img/logo.png" class="h-10" alt="" />
               </div>
               <div class="flex justify-center items-center absolute top-0 left-0 right-0 bottom-0">
-                <NavList :header_navbar=true :nav_row=true />
+                <NavList :page_selection="page_selection" :header_navbar=true :nav_row=true />
               </div>
               <div class="flex justify-center items-center w-full fixed bottom-0 left-0">
                 <div>

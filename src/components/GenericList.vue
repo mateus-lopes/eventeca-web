@@ -1,13 +1,13 @@
 <template lang="">
     <div class="pt-8 lg:pt-0">
         <TitleH2 :title="title" size="xl" />
-        <ul class="flex flex-col gap-4 mt-4">
+        <ul class="flex flex-col gap-4">
             <div v-for="item in items">
                 <LiLink :link='computedLink(item.id)'>
                     {{item.title}}
                 </LiLink>
             </div>
-            <LiLink v-if="this.title == 'Categorias'" link="/all-categories">
+            <LiLink v-if="this.title == 'Categorias'" link="all-categories">
                 Mais Categorias
             </LiLink>
         </ul>
