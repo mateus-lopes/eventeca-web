@@ -3,21 +3,10 @@
         <header>
             <NavbarComp page_selection="my-events" />
             <section class="container max-w-7xl mx-auto pt-3">
-                <InfoAlert text="/dev/ Participando acho q n vai rolar"/>
                 <InfoAlert text="Desing Interativo, arraste para o lado com o mouse ou touch para navegar"/>
             </section>
         </header>
         <main class="container max-w-7xl mx-auto">
-            <section class="mt-4 flex justify-between items-center">
-                <div>
-                    <TitleH1 title="Bem vindo(a), Nome de Usuario" size="4xl" color="gray-400" />
-                    <BtnNav class="text-sm" :stroke=true>
-                        Dados do Usúario (Por Enquanto)
-                    </BtnNav>
-                </div>
-                <div>
-                </div>
-            </section>
             <section class="mt-8">
                 <TitleList>
                     Eventos com Participação

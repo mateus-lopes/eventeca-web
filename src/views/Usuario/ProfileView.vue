@@ -4,16 +4,27 @@
             <NavbarComp />
         </header>
         <main class="my-16">
-            <section class="container max-w-7xl mx-auto p-20 shadow-xl rounded-2xl bg-white flex justify-start">
-                <div class="basis-1/4">
-                    <img src="../assets/img/example.jpg" class="rounded-2xl w-52 h-52" alt="">
-                </div>
-                <div class="basis-auto">
-                    <TitleH2 title="NOME DE USUARIO" />
-                    <p class="pb-2">Descrição: SER</p>
-                    <p class="py-2">Email: joaozinho@gmail.com</p>
-                    <p class="py-2">Telefone 1: (23) 912345678</p>
-                    <p class="py-2">Telefone 2: (23) 912345678</p>
+            <section class="container max-w-5xl mx-auto px-16 py-8 shadow-xl rounded-2xl bg-white">
+                <TitleH1 title="PERFIL DO USUÁRIO" />
+                <div class=" flex justify-start items-start">
+                    <div class="w-5/12">
+                        <img src="../../assets/img/mika.png" class="rounded-2xl w-52 h-52" alt="">
+                    </div>
+                    <div class="w-full">
+                        <p class="py-2">Nome Completo: Dados do Usuário</p>
+                        <p class="py-2">Email: Dados do Usuário</p>
+                        <p class="py-2">Telefone 1: Dados do Usuário</p>
+                        <p class="py-2">Telefone 2: Dados do Usuário</p>
+                        <p class="py-2">Endereço: Dados do Usuário</p>
+                        <div class="flex gap-4 text-right justify-end">
+                            <BtnNav class="bg-red-600">
+                                Sair
+                            </BtnNav>
+                            <BtnNav>
+                                Atualizar Dados
+                            </BtnNav>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -25,7 +36,8 @@
 <script>
 import Footer from "../../components/Footer/FooterComp.vue";
 import NavbarComp from "../../components/Navbar/NavComp.vue";
-import TitleH2 from "../../components/Commun/TitleH2.vue";
+import BtnNav from "../../components/Navbar/BtnNav.vue";
+import TitleH1 from "../../components/Commun/TitleH1.vue";
 
 export default {
     data() {
@@ -35,7 +47,8 @@ export default {
     components: {
         NavbarComp,
         Footer,
-        TitleH2,
+        TitleH1,
+        BtnNav,
     },
 }
 </script>
