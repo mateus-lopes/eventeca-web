@@ -12,7 +12,7 @@
                 <!-- navegation -->
                 <div class="pt-8 lg:pt-0">
                     <TitleH2  title="Menu" size="xl"/>
-                    <NavList :page_selection="page_selection" :nav_inline="false" ></NavList>
+                    <NavList :items="nav_menu" :page_selection="page_selection" :nav_inline="false" ></NavList>
                 </div>
                 <!-- contact -->
                 <GenericList :links=true title="Contato" :items="contact" />
@@ -50,7 +50,25 @@ export default {
                 {title:'Contato 1'},
                 {title:'Contato 2'},
                 {title:'Contato 3'}
-            ]
+            ],
+            nav_menu: [
+                {
+                    title:'Pagina Inicial',
+                    id:'/'
+                },
+                {
+                    title:'Encrote Eventos',
+                    id:'events'
+                },
+                {
+                    title:'Meus Eventos',
+                    id:'my-events'
+                },
+                {
+                    title:'Ajuda',
+                    id:'help'
+                },
+            ],
         }
     },
     props: {
