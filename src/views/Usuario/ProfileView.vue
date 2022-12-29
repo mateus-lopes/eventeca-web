@@ -28,14 +28,14 @@ import NavbarComp from "../../components/Navbar/NavComp.vue";
 import TitleH2 from "../../components/Commun/TitleH2.vue";
 
 export default {
-  data() {
-    return {
-    };
-  },
-  components: {
-    NavbarComp,
-    Footer,
-    TitleH2,
-},
+    data() {
+        return {
+        };
+    },
+    components: {
+        NavbarComp,
+        Footer,
+        TitleH2,
+    },
 }
 </script>
