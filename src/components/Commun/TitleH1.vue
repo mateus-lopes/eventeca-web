@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 :class="auto_class" class="py-4 font-medium">
+        <h1 :class="auto_class" class="py-4">
             {{ title }}
         </h1>
     </div>
@@ -9,7 +9,7 @@
 export default {
     data() {
       return {
-        auto_class: `${this.color ? `text-${this.color}` : 'text-primary'} ${this.class_title()}`
+        auto_class: `${this.color ? `text-${this.color}` : 'text-primary font-medium'} ${this.class_title()}`
       }  
     },
     props: {

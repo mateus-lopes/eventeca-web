@@ -43,15 +43,15 @@
 </template>
 
 <script>
-import CategoriesList from "../components/Event/CategoriesList.vue";
-import EventsList from "../components/Event/EventsList.vue";
-import EventsSpecial from "../components/Event/EventsSpecial.vue";
-import Footer from "../components/Footer/FooterComp.vue";
-import NavbarComp from "../components/Navbar/NavComp.vue";
-import TitleList from "../components/Commun/TitleList.vue";
-import AdvantagesSection from "../components/Commun/AdvantagesSection.vue";
-import FriendsSection from "../components/Commun/FriendsSection.vue";
-import InfoAlert from "../components/Commun/InfoAlert.vue";
+import CategoriesList from "../../components/Event/CategoriesList.vue";
+import EventsList from "../../components/Event/EventsList.vue";
+import EventsSpecial from "../../components/Event/EventsSpecial.vue";
+import Footer from "../../components/Footer/FooterComp.vue";
+import NavbarComp from "../../components/Navbar/NavComp.vue";
+import TitleList from "../../components/Commun/TitleList.vue";
+import AdvantagesSection from "../../components/Commun/AdvantagesSection.vue";
+import FriendsSection from "../../components/Commun/FriendsSection.vue";
+import InfoAlert from "../../components/Commun/InfoAlert.vue";
 
 export default {
   data() {

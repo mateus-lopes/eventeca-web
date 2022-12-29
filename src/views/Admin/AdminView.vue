@@ -17,8 +17,8 @@
     </div>
 </template>
 <script>
-import GenericList from "../components/Commun/GenericList.vue";
-import NavList from "../components/Navbar/NavList.vue";
+import GenericList from "../../components/Commun/GenericList.vue";
+import NavList from "../../components/Navbar/NavList.vue";
 
 export default {
     data() {

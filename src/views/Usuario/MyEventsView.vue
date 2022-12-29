@@ -8,24 +8,31 @@
             </section>
         </header>
         <main class="container max-w-7xl mx-auto">
-            <section class="mt-4">
-                <CategoriesList></CategoriesList>
+            <section class="mt-4 flex justify-between items-center">
+                <div>
+                    <TitleH1 title="Bem vindo(a), Nome de Usuario" size="4xl" color="gray-400" />
+                    <BtnNav class="text-sm" :stroke=true>
+                        Dados do Usúario (Por Enquanto)
+                    </BtnNav>
+                </div>
+                <div>
+                </div>
             </section>
             <section class="mt-8">
                 <TitleList>
-                    Participando
+                    Eventos com Participação
                 </TitleList>
                 <EventsList></EventsList>
             </section>
             <section class="my-8">
                 <TitleList>
-                    Minha Lista
+                    Sua Lista de Eventos
                 </TitleList>
                 <EventsList></EventsList>
             </section>
             <section class="mb-32">
                 <TitleList>
-                    Mais Acessados
+                    Os Mais Acessados
                 </TitleList>
                 <EventsList></EventsList>
             </section>
@@ -37,12 +44,14 @@
 </template>
 <script>
 
-import CategoriesList from "../components/Event/CategoriesList.vue";
-import EventsList from "../components/Event/EventsList.vue";
-import Footer from "../components/Footer/FooterComp.vue";
-import NavbarComp from "../components/Navbar/NavComp.vue";
-import TitleList from "../components/Commun/TitleList.vue";
-import InfoAlert from "../components/Commun/InfoAlert.vue";
+import CategoriesList from "../../components/Event/CategoriesList.vue";
+import EventsList from "../../components/Event/EventsList.vue";
+import Footer from "../../components/Footer/FooterComp.vue";
+import NavbarComp from "../../components/Navbar/NavComp.vue";
+import TitleList from "../../components/Commun/TitleList.vue";
+import InfoAlert from "../../components/Commun/InfoAlert.vue";
+import TitleH1 from "../../components/Commun/TitleH1.vue";
+import BtnNav from "../../components/Navbar/BtnNav.vue";
 
 export default {
   data() {
@@ -56,6 +65,8 @@ export default {
     CategoriesList,
     EventsList,
     InfoAlert,
+    TitleH1,
+    BtnNav,
     },
 }
 </script>

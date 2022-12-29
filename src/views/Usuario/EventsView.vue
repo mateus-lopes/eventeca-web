@@ -19,11 +19,11 @@
     </div>
 </template>
 <script>
-import Footer from "../components/Footer/FooterComp.vue";
-import NavbarComp from "../components/Navbar/NavComp.vue";
-import SearchEvents from "../components/Event/SearchEvents.vue";
-import AllEvents from "../components/Event/AllEvents.vue";
-import InfoAlert from "../components/Commun/InfoAlert.vue";
+import Footer from "../../components/Footer/FooterComp.vue";
+import NavbarComp from "../../components/Navbar/NavComp.vue";
+import SearchEvents from "../../components/Event/SearchEvents.vue";
+import AllEvents from "../../components/Event/AllEvents.vue";
+import InfoAlert from "../../components/Commun/InfoAlert.vue";
 
 export default {
   data() {

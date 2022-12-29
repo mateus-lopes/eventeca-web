@@ -6,37 +6,37 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/HomeView.vue')
+      component: () => import('../views/Usuario/HomeView.vue')
     },
     {
       path: '/events',
       name: 'events',
-      component: () => import('../views/EventsView.vue')
+      component: () => import('../views/Usuario/EventsView.vue')
     },
     {
       path: '/my-events',
       name: 'my-events',
-      component: () => import('../views/MyEventsView.vue')
+      component: () => import('../views/Usuario/MyEventsView.vue')
     },
     {
       path: '/help',
       name: 'help',
-      component: () => import('../views/HelpView.vue')
+      component: () => import('../views/Usuario/HelpView.vue')
     },
     {
       path: '/profile',
       name: 'profile',
-      component: () => import('../views/ProfileView.vue')
+      component: () => import('../views/Usuario/ProfileView.vue')
     },
     {
       path: '/all-categories',
       name: 'all-categories',
-      component: () => import('../views/CategoriesView.vue')
+      component: () => import('../views/Usuario/CategoriesView.vue')
     },
     {
       path: '/admin',
       name: 'admin',
-      component: () => import('../views/AdminView.vue')
+      component: () => import('../views/Admin/AdminView.vue')
     },
   ]
 })

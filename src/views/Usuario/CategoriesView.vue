@@ -12,8 +12,8 @@
   </div>
 </template>
 <script>
-import Footer from "../components/Footer/FooterComp.vue";
-import NavbarComp from "../components/Navbar/NavComp.vue";
+import Footer from "../../components/Footer/FooterComp.vue";
+import NavbarComp from "../../components/Navbar/NavComp.vue";
 
 export default {
 data() {
