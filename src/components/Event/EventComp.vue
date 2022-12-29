@@ -2,7 +2,7 @@
     <div @click="goEvent" class="bg-white cursor-pointer p-2">
         <div>
             <a href="#">
-                <img class="rounded-base w-full" src="../../assets/img/example.jpg" alt="">
+                <img class="rounded-2xl w-full" src="../../assets/img/example.jpg" alt="">
             </a>
         </div>
         <div class="">
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import TitleH1 from '../TitleH1.vue';
+import TitleH1 from '../Commun/TitleH1.vue';
 
 export default {
     props: {

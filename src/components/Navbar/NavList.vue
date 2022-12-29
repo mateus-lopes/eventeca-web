@@ -1,24 +1,17 @@
 <template>
     <nav class="w-full">
         <ul class="flex flex-col gap-4" :class="{'gap-0 lg:flex-row lg:justify-center text-center': nav_row}">
-            <LiLink link="/" :style="css_link" :page_selection="page_selection">
-                Página Inicial
-            </LiLink>
-            <LiLink link="events" :style="css_link" :page_selection="page_selection">
-                Encontre Eventos
-            </LiLink>
-            <LiLink link="my-events" :style="css_link" :page_selection="page_selection">
-                Meus Eventos
-            </LiLink>
-            <LiLink link="help" :style="css_link" :page_selection="page_selection">
-                Ajuda
-            </LiLink>
+            <div v-for="link in items">
+                <LiLink :link="link.id" :style="css_link" :page_selection="page_selection">
+                    {{ link.title }}
+                </LiLink>
+            </div>
         </ul>
     </nav>
 </template> 
 
 <script>
-import LiLink from '../LiLink.vue';
+import LiLink from '../Commun/LiLink.vue';
 
 
 export default {
@@ -28,6 +21,7 @@ export default {
         };
     },
     props: {
+        items: Array,
         nav_row: Boolean,
         header_navbar: Boolean,
         page_selection: String,

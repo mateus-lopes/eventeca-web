@@ -11,7 +11,7 @@ export default {
     },
     data(){
         return{
-            css: this.stroke ? 'hover:text-primary transition-all text-gray-800 rounded-3xl' : "px-5 lg:px-7 py-3.5 hover:bg-gray-600 transition-all bg-primary text-white rounded-3xl"
+            css: this.stroke ? 'hover:text-primary transition-all text-gray-800 rounded-2xl' : "px-5 lg:px-7 py-3.5 hover:bg-gray-600 transition-all bg-primary text-white rounded-2xl"
         }
     },
     methods: {

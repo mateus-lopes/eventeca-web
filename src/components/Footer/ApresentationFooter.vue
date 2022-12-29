@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import TitleH2 from '../TitleH2.vue';
+import TitleH2 from '../Commun/TitleH2.vue';
 
 export default {
     components: {

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary p-12 md:p-16 lg:p-20 rounded-base text-white">
+  <div class="bg-primary p-12 md:p-16 lg:p-20 rounded-2xl text-white">
       <div class="flex flex-col md:flex-row space-beteewn gap-8">
           <AdvantagesCard title="Planejamento Online" icon="bi bi-laptop" :content="content" />
           <AdvantagesCard title="Inscrições" icon="bi bi-people" :content="content" />

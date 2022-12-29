@@ -1,7 +1,7 @@
 <template lang="">
-    <div class="text-sm">
+    <div class="text-sm bg-primary rounded-2xl overflow-hidden">
         <swiper
-            class="md:hidden overflow-hidden rounded-xl"
+            class="md:hidden"
             :slides-per-view="3"
             :space-between="0"
             :modules="modules" 
@@ -38,7 +38,7 @@
                         </swiper-slide>
         </swiper>
         <swiper
-            class="hidden md:block lg:hidden overflow-hidden rounded-xl"
+            class="hidden md:block lg:hidden"
             :slides-per-view="5"
             :space-between="0"
             @swiper="onSwiper"
@@ -78,7 +78,7 @@
                         </swiper-slide>
         </swiper>
         <swiper
-            class="hidden lg:block xl:hidden overflow-hidden rounded-xl"
+            class="hidden lg:block xl:hidden"
             :slides-per-view="6"
             :space-between="0"
             @swiper="onSwiper"
@@ -118,7 +118,7 @@
                         </swiper-slide>
         </swiper>
         <swiper
-            class="xl:block hidden overflow-hidden rounded-xl"
+            class="xl:block hidden"
             :slides-per-view="8"
             :space-between="0"
             @swiper="onSwiper"

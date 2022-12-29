@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="overflow-hidden rounded-xl flex mt-4 flex-wrap">
+    <div class="overflow-hidden rounded-2xl flex mt-4 flex-wrap">
         <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
         <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
         <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>

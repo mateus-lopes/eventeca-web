@@ -6,15 +6,15 @@
                 </label>
                 <div class="relative w-5/12 hidden lg:block">
                     <!-- pesqusia desktop -->
-                    <input type="search" id="default-search" class="py-2 px-4 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary focus:border-primary " placeholder="Pesquisar..." required="">
-                    <button type="submit" class="text-white absolute h-full right-0 bottom-0 bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-r-lg text-sm px-4 py-2">
+                    <input type="search" id="default-search" class="py-2 px-4 w-full text-sm text-gray-900 bg-gray-50 rounded-2xl border border-gray-300 focus:ring-primary focus:border-primary " placeholder="Pesquisar..." required="">
+                    <button type="submit" class="text-white absolute h-full right-0 bottom-0 bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-r-2xl text-sm px-4 py-2">
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
-                <div class="relative lg:hidden rounded-xl overflow-hidden">
+                <div class="relative lg:hidden rounded-2xl overflow-hidden">
                     <!-- pesqusia mobile -->
-                    <!-- <input type="search" id="default-search" class="relative py-5 px-4 w-full text-sm text-gray-900 bg-gray-50 rounded-xl border border-gray-300 focus:ring-primary focus:border-primary " placeholder="Pesquisar..." required="">
-                    <button type="submit" class="text-white absolute h-full right-0 bottom-0 bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-r-xl text-sm px-4 py-2">
+                    <!-- <input type="search" id="default-search" class="relative py-5 px-4 w-full text-sm text-gray-900 bg-gray-50 rounded-2xl border border-gray-300 focus:ring-primary focus:border-primary " placeholder="Pesquisar..." required="">
+                    <button type="submit" class="text-white absolute h-full right-0 bottom-0 bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-r-2xl text-sm px-4 py-2">
                         <i class="bi bi-search"></i>
                     </button> -->
                 </div>
@@ -65,7 +65,7 @@
     </div>
 </template>
 <script>
-import BtnNav from '../navbar/BtnNav.vue';
+import BtnNav from '../Navbar/BtnNav.vue';
 
 export default {
     components: {

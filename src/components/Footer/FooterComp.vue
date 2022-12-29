@@ -3,19 +3,19 @@
         <section class="container max-w-7xl mx-auto lg:flex gap-16 justify-between pt-16">
             <!-- img logo / social medias -->
             <div class="w-full lg:w-4/12">
-                <ApresentationFooter></ApresentationFooter>
-                <SocialMedias></SocialMedias>
+                <ApresentationFooter />
+                <SocialMedias />
             </div>
             <div class="w-full lg:w-8/12 lg:flex justify-end gap-32">
                 <!-- categories -->
-                <GenericList title="Categorias" :items="categories"></GenericList>
+                <GenericList title="Categorias" :items="categories" />
                 <!-- navegation -->
                 <div class="pt-8 lg:pt-0">
                     <TitleH2  title="Menu" size="xl"/>
                     <NavList :page_selection="page_selection" :nav_inline="false" ></NavList>
                 </div>
                 <!-- contact -->
-                <GenericList :links=true title="Contato" :items="contact"></GenericList>
+                <GenericList :links=true title="Contato" :items="contact" />
             </div>
         </section>
         <section class="container max-w-7xl mx-auto md:flex justify-end pb-16 pt-8 lg:pt-0">
@@ -25,17 +25,17 @@
                 </button>
             </div>
         </section>
-        <EndFooter></EndFooter>
+        <EndFooter />
     </main>
 </template>
 
 <script>
 import ApresentationFooter from './ApresentationFooter.vue';
-import SocialMedias from '../SocialMedias.vue';
-import NavList from '../navbar/NavList.vue';
-import GenericList from '../GenericList.vue';
-import LiLink from '../LiLink.vue';
-import TitleH2 from '../TitleH2.vue';
+import SocialMedias from '../Commun/SocialMedias.vue';
+import NavList from '../Navbar/NavList.vue';
+import GenericList from '../Commun/GenericList.vue';
+import LiLink from '../Commun/LiLink.vue';
+import TitleH2 from '../Commun/TitleH2.vue';
 import EndFooter from './EndFooter.vue';
 
 export default {

@@ -10,6 +10,24 @@ export default {
         open_menu: false,
       },
       info: true,
+      nav_menu: [
+        {
+            title:'Pagina Inicial',
+            id:'/'
+        },
+        {
+            title:'Encrote Eventos',
+            id:'events'
+        },
+        {
+            title:'Meus Eventos',
+            id:'my-events'
+        },
+        {
+            title:'Ajuda',
+            id:'help'
+        },
+    ],
       // is_logged: this.$cookies.get("logged"),
       // user_id: this.$cookies.get("userId"),
       // user: {},
@@ -68,14 +86,14 @@ export default {
               <img src="../../assets/img/logo.png" class="h-10" alt="" />
             </router-link>
             <div class="hidden xl:block mr-4">
-              <NavList :page_selection="page_selection" :header_navbar=true :nav_row=true />
+              <NavList :items="nav_menu" :page_selection="page_selection" :header_navbar=true :nav_row=true />
             </div>
           </div>
           <!-- create event / user -->
           <div class="flex items-center">
             <!-- btn create event ( click -> dashboard-admin ) -->
             <div class="hidden md:flex items-center">
-              <BtnNav link="/admin/login" :stroke=true>
+              <BtnNav link="/admin" :stroke=true>
                 Criar Evento
               </BtnNav>
               <div class="w-0.5 h-10 mx-5 bg-gray-200 "></div>
@@ -109,7 +127,7 @@ export default {
                 <img src="../../assets/img/logo.png" class="h-10" alt="" />
               </div>
               <div class="flex justify-center items-center absolute top-0 left-0 right-0 bottom-0">
-                <NavList :page_selection="page_selection" :header_navbar=true :nav_row=true />
+                <NavList :items="nav_menu" :page_selection="page_selection" :header_navbar=true :nav_row=true />
               </div>
               <div class="flex justify-center items-center w-full fixed bottom-0 left-0">
                 <div>

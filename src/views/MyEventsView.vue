@@ -37,12 +37,12 @@
 </template>
 <script>
 
-import CategoriesList from "../components/events/CategoriesList.vue";
-import EventsList from "../components/events/EventsList.vue";
-import Footer from "../components/footer/FooterComp.vue";
-import NavbarComp from "../components/navbar/NavComp.vue";
-import TitleList from "../components/TitleList.vue";
-import InfoAlert from "../components/navbar/InfoAlert.vue";
+import CategoriesList from "../components/Event/CategoriesList.vue";
+import EventsList from "../components/Event/EventsList.vue";
+import Footer from "../components/Footer/FooterComp.vue";
+import NavbarComp from "../components/Navbar/NavComp.vue";
+import TitleList from "../components/Commun/TitleList.vue";
+import InfoAlert from "../components/Commun/InfoAlert.vue";
 
 export default {
   data() {

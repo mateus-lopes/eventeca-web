@@ -33,6 +33,11 @@ const router = createRouter({
       name: 'all-categories',
       component: () => import('../views/CategoriesView.vue')
     },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: () => import('../views/AdminView.vue')
+    },
   ]
 })
 

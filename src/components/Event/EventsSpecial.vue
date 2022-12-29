@@ -1,6 +1,6 @@
 <template lang="">
     <swiper
-            class="overflow-hidden rounded-xl"
+            class="overflow-hidden rounded-2xl"
             :slides-per-view="1"
             :space-between="25"
             :modules="modules" 

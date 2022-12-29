@@ -12,9 +12,9 @@
     </div>
 </template>
 <script>
-import Footer from "../components/footer/FooterComp.vue";
-import NavbarComp from "../components/navbar/NavComp.vue";
-import HelpContainer from "../components/HelpContainer.vue";
+import Footer from "../components/Footer/FooterComp.vue";
+import NavbarComp from "../components/Navbar/NavComp.vue";
+import HelpContainer from "../components/Commun/HelpContainer.vue";
 
 export default {
   data() {
