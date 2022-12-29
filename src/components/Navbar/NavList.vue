@@ -17,7 +17,7 @@ import LiLink from '../Commun/LiLink.vue';
 export default {
     data() {
         return {
-            css_link: this.header_navbar ? "bg-primary text-white hover:border-8 border-primary hover:shadow-2xl xl:hover:border-none xl:hover:shadow-none shadow-black cursor-pointer text-lg xl:text-base transition-all py-10 lg:py-24 lg:px-16 xl:py-0 xl:px-4 xl:hover:text-cyan-700 xl:text-gray-800 xl:bg-white" : '' 
+            css_link: this.header_navbar ? "bg-primary text-white hover:border-8 border-primary hover:shadow-2xl xl:hover:border-none xl:hover:shadow-none shadow-black cursor-pointer text-lg xl:text-base transition-all py-10 lg:py-24 lg:px-16 xl:py-0 xl:px-4 xl:hover:text-cyan-700 xl:text-gray-800 xl:bg-white" : '',
         };
     },
     props: {

@@ -54,14 +54,19 @@ const router = createRouter({
       component: () => import('../views/Admin/SalesView.vue')
     },
     {
-      path: '/admin/cetificates',
-      name: 'cetificates',
+      path: '/admin/certificates',
+      name: 'certificates',
       component: () => import('../views/Admin/CertificatesView.vue')
     },
     {
       path: '/admin/settings',
       name: 'settings',
       component: () => import('../views/Admin/SettingsView.vue')
+    },
+    {
+      path: '/admin/help',
+      name: 'help',
+      component: () => import('../views/Admin/HelpView.vue')
     },
     {
       path: '/login',

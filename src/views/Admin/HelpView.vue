@@ -6,7 +6,7 @@
                 <div class="p-12 border-b">
                     <img src="../../assets/img/logo.png" class="h-14" alt="">
                 </div>
-                <NavCompAdmin page_selection="admin/settings" />
+                <NavCompAdmin page_selection="admin/help" />
                 <BtnFooterAdmin link="/admin/help">
                     Ajuda 
                 </BtnFooterAdmin>
@@ -21,7 +21,7 @@
                     </BtnUserAdmin>
                 </section>
                 <!-- conteudo -->
-                Configurações
+                Help
             </main>
         </div>
     </div>

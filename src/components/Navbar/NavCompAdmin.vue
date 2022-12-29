@@ -1,16 +1,26 @@
 <template lang="">
     <div>
-        
+        <div class="mt-8">
+            <NavList :header_navbar=true :page_selection="page_selection" :nav_inline=false :items="nav_menu" />
+        </div>
     </div>
 </template>
 <script>
+import NavList from './NavList.vue';
+
 export default {
+    components: {    
+        NavList,
+    },
+    props:{
+        page_selection: String,
+    },
     data() {
         return {
             nav_menu: [
                 {
                     title:'Dashboard',
-                    id:'admin'
+                    id:'admin/dashboard'
                 },
                 {
                     title:'Programação',
@@ -26,7 +36,7 @@ export default {
                 },
                 {
                     title:'Certificados',
-                    id:'admin/cetificates'
+                    id:'admin/certificates'
                 },
                 {
                     title:'Configurações',
