@@ -35,43 +35,48 @@ const router = createRouter({
     },
     {
       path: '/admin/dashboard',
-      name: 'dashboard',
+      name: 'dash-dashboard',
       component: () => import('../views/Admin/DashboardView.vue')
     },
     {
       path: '/admin/organization',
-      name: 'organization',
+      name: 'dash-organization',
       component: () => import('../views/Admin/OrganizationView.vue')
     },
     {
       path: '/admin/inscription',
-      name: 'inscription',
+      name: 'dash-inscription',
       component: () => import('../views/Admin/InscriptionView.vue')
     },
     {
       path: '/admin/sales',
-      name: 'sales',
+      name: 'dash-sales',
       component: () => import('../views/Admin/SalesView.vue')
     },
     {
       path: '/admin/certificates',
-      name: 'certificates',
+      name: 'dash-certificates',
       component: () => import('../views/Admin/CertificatesView.vue')
     },
     {
       path: '/admin/settings',
-      name: 'settings',
+      name: 'dash-settings',
       component: () => import('../views/Admin/SettingsView.vue')
     },
     {
       path: '/admin/help',
-      name: 'help',
+      name: 'dash-help',
       component: () => import('../views/Admin/HelpView.vue')
     },
     {
       path: '/login',
       name: 'login',
       component: () => import('../views/Login/LoginView.vue')
+    },
+    {
+      path: '/admin/login',
+      name: 'dash-login',
+      component: () => import('../views/Login/LoginAdminView.vue')
     },
     {
       path: '/create-account',

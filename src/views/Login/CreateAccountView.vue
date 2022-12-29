@@ -16,7 +16,7 @@
                                     </router-link>
                                 </div>
                                 <div class="w-full md:w-5/12">
-                                    <BtnNav class="w-full">
+                                    <BtnNav link="login" class="w-full">
                                         Criar Conta
                                     </BtnNav>
                                 </div>

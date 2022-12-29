@@ -21,7 +21,7 @@
                         </router-link>
                     </div>
                     <div class="w-full md:w-4/12">
-                        <BtnNav class="w-full">
+                        <BtnNav link="/" class="w-full">
                             Entrar
                         </BtnNav>
                     </div>
