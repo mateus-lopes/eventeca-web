@@ -5,20 +5,22 @@
                 <img src="../../assets/img/logo.png" class="h-14" alt="">
             </nav>
             <NavCompAdmin page_selection="admin/dashboard" />
+            <!-- ADD EVENT -->
+            <BtnCreateEvent />
             <!-- rodape -->
-            <BtnFooterAdmin link="/admin/help">
-                Ajuda 
+            <BtnFooterAdmin link="/">
+                Sair 
             </BtnFooterAdmin>
         </header>
         <div class="w-full lg:w-9/12">
             <!-- menu top -->
-            <section class="flex justify-end">
+            <section class="flex justify-end gap-8">
                 <BtnUserAdmin link="/admin/settings">
                     Nome de Usuário
                 </BtnUserAdmin>
             </section>
             <main>
-                <Paginator text="Dashboard" />
+                <Paginator text1="Admin" text="Dashboard" />
                 <!-- conteudo -->
                 <section class="flex flex-wrap pr-16">
                     <BigBigCardDash title="Titulo">Informação</BigBigCardDash>
@@ -35,7 +37,8 @@
     </div>
 </template>
 <script>
-import NavCompAdmin from "../../components/Navbar/NavCompAdmin.vue";
+import BtnCreateEvent from "../../components/Navbar/BtnCreateEvent.vue";
+import NavCompAdmin from "../../components/Navbar/NavDashAdmin.vue";
 import BtnUserAdmin from "../../components/Navbar/BtnUserAdmin.vue";
 import BtnFooterAdmin from "../../components/Footer/BtnFooterAdmin.vue";
 import Paginator from "../../components/Commun/Paginator.vue";
@@ -51,7 +54,8 @@ export default {
         Paginator,
         CardDash,
         BigCardDash,
-        BigBigCardDash
+        BigBigCardDash,
+        BtnCreateEvent
     }
 }
 </script>

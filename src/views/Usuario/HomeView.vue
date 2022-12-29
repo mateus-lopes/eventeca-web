@@ -3,7 +3,6 @@
     <header>
         <NavbarComp page_selection="/" />
         <section class="container max-w-7xl mx-auto pt-3">
-          <InfoAlert text="/dev/ qq se acha desses info? coloquei pq mano n rola colocar setas nesses slider n encaixa de jeito nenhum, acho q assim fica baiano mas fica bom ao mesmo tempo"/>
           <InfoAlert text="Desing Interativo, arraste para o lado com o mouse ou touch para navegar"/>
         </section>
     </header>

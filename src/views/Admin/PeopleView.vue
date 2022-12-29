@@ -4,7 +4,7 @@
             <nav class="p-12 border-b">
                 <img src="../../assets/img/logo.png" class="h-14" alt="">
             </nav>
-            <NavCompAdmin page_selection="admin/settings" />
+            <NavCompAdmin page_selection="admin/people" />
             <!-- ADD EVENT -->
             <BtnCreateEvent />
             <!-- rodape -->
@@ -20,7 +20,7 @@
                 </BtnUserAdmin>
             </section>
             <main>
-                <Paginator text1="Admin" text="Configurações" />
+                <Paginator text1="Admin" text="Pessoas" />
                 <!-- conteudo -->
                
             </main>

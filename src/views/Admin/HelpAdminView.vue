@@ -4,10 +4,12 @@
             <nav class="p-12 border-b">
                 <img src="../../assets/img/logo.png" class="h-14" alt="">
             </nav>
-            <NavCompAdmin page_selection="admin/inscription" />
+            <NavCompAdmin page_selection="admin/help" />
+            <!-- ADD EVENT -->
+            <BtnCreateEvent />
             <!-- rodape -->
-            <BtnFooterAdmin link="/admin/help">
-                Ajuda 
+            <BtnFooterAdmin link="/">
+                Sair 
             </BtnFooterAdmin>
         </header>
         <div class="w-full lg:w-9/12">
@@ -18,15 +20,15 @@
                 </BtnUserAdmin>
             </section>
             <main>
-                <Paginator text="Inscrições" />
+                <Paginator text1="Admin" text="Ajuda" />
                 <!-- conteudo -->
-               
             </main>
         </div>
     </div>
 </template>
 <script>
-import NavCompAdmin from "../../components/Navbar/NavCompAdmin.vue";
+import BtnCreateEvent from "../../components/Navbar/BtnCreateEvent.vue";
+import NavCompAdmin from "../../components/Navbar/NavDashAdmin.vue";
 import BtnUserAdmin from "../../components/Navbar/BtnUserAdmin.vue";
 import BtnFooterAdmin from "../../components/Footer/BtnFooterAdmin.vue";
 import Paginator from "../../components/Commun/Paginator.vue";
@@ -42,7 +44,8 @@ export default {
         Paginator,
         CardDash,
         BigCardDash,
-        BigBigCardDash
+        BigBigCardDash,
+        BtnCreateEvent
     }
 }
 </script>

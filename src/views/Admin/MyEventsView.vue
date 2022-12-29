@@ -4,7 +4,7 @@
             <nav class="p-12 border-b">
                 <img src="../../assets/img/logo.png" class="h-14" alt="">
             </nav>
-            <NavCompAdmin page_selection="admin/settings" />
+            <NavCompAdmin page_selection="admin/my-events" />
             <!-- ADD EVENT -->
             <BtnCreateEvent />
             <!-- rodape -->
@@ -20,9 +20,15 @@
                 </BtnUserAdmin>
             </section>
             <main>
-                <Paginator text1="Admin" text="Configurações" />
+                <Paginator text1="Admin" text="Meus Eventos" />
                 <!-- conteudo -->
-               
+                <section class="flex flex-wrap pr-16">
+                    <CardDash title="Evento teste">
+                        <router-link to="events/dashboard">
+                            Evento 1
+                        </router-link>
+                    </CardDash>
+                </section>
             </main>
         </div>
     </div>

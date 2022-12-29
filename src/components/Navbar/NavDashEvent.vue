@@ -19,28 +19,28 @@ export default {
         return {
             nav_menu: [
                 {
-                    title:'Dashboard',
-                    id:'admin/dashboard'
+                    title:'Visão geral',
+                    id:'admin/events/dashboard'
                 },
                 {
                     title:'Programação',
-                    id:'admin/organization'
+                    id:'admin/events/organization'
                 },
                 {
                     title:'Inscrição',
-                    id:'admin/inscription'
+                    id:'admin/events/inscription'
                 },
                 {
                     title:'Vendas',
-                    id:'admin/sales'
+                    id:'admin/events/sales'
                 },
                 {
                     title:'Certificados',
-                    id:'admin/certificates'
+                    id:'admin/events/certificates'
                 },
                 {
                     title:'Configurações',
-                    id:'admin/settings'
+                    id:'admin/events/settings'
                 }
             ]
         }

@@ -1,7 +1,7 @@
 <template lang="">
     <div>
         <p class="text-gray-500">
-            Admin / {{text}} 
+            {{text1}} / {{text}} 
         </p>
         <TitleH1 :title="text" size="2xl"/>
     </div>
@@ -12,6 +12,7 @@ import TitleH1 from "./TitleH1.vue";
 export default {
     props: {
         text: String,
+        text1: String,
     },
     components: {
         TitleH1,

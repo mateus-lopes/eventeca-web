@@ -2,7 +2,7 @@
     <div class="pr-2 pb-2 pt-2 w-full">
         <div class="p-8 bg-white shadow-md rounded-2xl">
             {{title}}
-            <p class="text-center text-primary text-2xl pt-2">
+            <p class="text-primary text-2xl pt-2">
                 <slot></slot>
             </p>
         </div>

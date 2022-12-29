@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    // ROTAS USUARIO
     {
       path: '/',
       name: 'home',
@@ -33,40 +34,77 @@ const router = createRouter({
       name: 'all-categories',
       component: () => import('../views/Usuario/CategoriesView.vue')
     },
+    // ROTAS DASHBOARD
     {
       path: '/admin/dashboard',
       name: 'dash-dashboard',
       component: () => import('../views/Admin/DashboardView.vue')
     },
     {
-      path: '/admin/organization',
-      name: 'dash-organization',
-      component: () => import('../views/Admin/OrganizationView.vue')
+      path: '/admin/my-events',
+      name: 'admin-my-events',
+      component: () => import('../views/Admin/MyEventsView.vue')
     },
     {
-      path: '/admin/inscription',
-      name: 'dash-inscription',
-      component: () => import('../views/Admin/InscriptionView.vue')
+      path: '/admin/people',
+      name: 'admin-people',
+      component: () => import('../views/Admin/PeopleView.vue')
     },
     {
       path: '/admin/sales',
-      name: 'dash-sales',
+      name: 'admin-sales',
       component: () => import('../views/Admin/SalesView.vue')
     },
     {
-      path: '/admin/certificates',
-      name: 'dash-certificates',
-      component: () => import('../views/Admin/CertificatesView.vue')
-    },
-    {
       path: '/admin/settings',
-      name: 'dash-settings',
+      name: 'admin-settings',
       component: () => import('../views/Admin/SettingsView.vue')
     },
     {
       path: '/admin/help',
-      name: 'dash-help',
-      component: () => import('../views/Admin/HelpView.vue')
+      name: 'admin-help',
+      component: () => import('../views/Admin/HelpAdminView.vue')
+    },
+    // ROTAS EVENTOS
+    {
+      path: '/admin/events/create-event',
+      name: 'create-event',
+      component: () => import('../views/Event/CreateEventView.vue')
+    },
+    {
+      path: '/admin/events/dashboard',
+      name: 'event-dashboard',
+      component: () => import('../views/Event/DashboardView.vue')
+    },
+    {
+      path: '/admin/events/organization',
+      name: 'event-organization',
+      component: () => import('../views/Event/OrganizationView.vue')
+    },
+    {
+      path: '/admin/events/inscription',
+      name: 'event-inscription',
+      component: () => import('../views/Event/InscriptionView.vue')
+    },
+    {
+      path: '/admin/events/sales',
+      name: 'event-sales',
+      component: () => import('../views/Event/SalesView.vue')
+    },
+    {
+      path: '/admin/events/certificates',
+      name: 'event-certificates',
+      component: () => import('../views/Event/CertificatesView.vue')
+    },
+    {
+      path: '/admin/events/settings',
+      name: 'event-settings',
+      component: () => import('../views/Event/SettingsView.vue')
+    },
+    {
+      path: '/admin/events/help',
+      name: 'event-help',
+      component: () => import('../views/Event/HelpView.vue')
     },
     {
       path: '/login',
@@ -75,7 +113,7 @@ const router = createRouter({
     },
     {
       path: '/admin/login',
-      name: 'dash-login',
+      name: 'admin-login',
       component: () => import('../views/Login/LoginAdminView.vue')
     },
     {
@@ -87,7 +125,8 @@ const router = createRouter({
       path: '/:pathMatch(.*)*', 
       name: 'page-not-found',
       component: () => import('../views/NotFound.vue')
-    }
+    },
+    // teste
   ]
 })
 

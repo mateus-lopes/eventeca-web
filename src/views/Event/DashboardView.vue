@@ -4,32 +4,25 @@
             <nav class="p-12 border-b">
                 <img src="../../assets/img/logo.png" class="h-14" alt="">
             </nav>
-            <NavCompAdmin page_selection="admin/settings" />
-            <!-- ADD EVENT -->
-            <BtnCreateEvent />
+            <NavDashEvent page_selection="admin/events/dashboard" />
             <!-- rodape -->
-            <BtnFooterAdmin link="/">
-                Sair 
+            <BtnFooterAdmin link="/admin/dashboard">
+                Voltar ao Dashboard 
             </BtnFooterAdmin>
         </header>
-        <div class="w-full lg:w-9/12">
-            <!-- menu top -->
-            <section class="flex justify-end">
-                <BtnUserAdmin link="/admin/settings">
-                    Nome de Usuário
-                </BtnUserAdmin>
-            </section>
+        <div class="w-full lg:w-9/12 pt-16">
             <main>
-                <Paginator text1="Admin" text="Configurações" />
+                <Paginator text1="Evento" text="Visão Geral" />
                 <!-- conteudo -->
-               
+                <section class="flex flex-wrap pr-16">
+                    <BigBigCardDash title="DASH DE ENVENTO">DASH DE ENVENTO</BigBigCardDash>
+                </section>
             </main>
         </div>
     </div>
 </template>
 <script>
-import BtnCreateEvent from "../../components/Navbar/BtnCreateEvent.vue";
-import NavCompAdmin from "../../components/Navbar/NavDashAdmin.vue";
+import NavDashEvent from "../../components/Navbar/NavDashEvent.vue";
 import BtnUserAdmin from "../../components/Navbar/BtnUserAdmin.vue";
 import BtnFooterAdmin from "../../components/Footer/BtnFooterAdmin.vue";
 import Paginator from "../../components/Commun/Paginator.vue";
@@ -39,14 +32,13 @@ import BigBigCardDash from "../../components/Commun/BigBigCardDash.vue";
 
 export default {
     components: {
-        NavCompAdmin,
+        NavDashEvent,
         BtnFooterAdmin,
         BtnUserAdmin,
         Paginator,
         CardDash,
         BigCardDash,
-        BigBigCardDash,
-        BtnCreateEvent
+        BigBigCardDash
     }
 }
 </script>

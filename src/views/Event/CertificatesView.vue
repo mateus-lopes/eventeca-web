@@ -4,29 +4,22 @@
             <nav class="p-12 border-b">
                 <img src="../../assets/img/logo.png" class="h-14" alt="">
             </nav>
-            <NavCompAdmin page_selection="admin/organization" />
+            <NavCompAdmin page_selection="admin/events/certificates" />
             <!-- rodape -->
-            <BtnFooterAdmin link="/admin/help">
-                Ajuda 
+            <BtnFooterAdmin link="/admin/dashboard">
+                Voltar ao Dashboard 
             </BtnFooterAdmin>
         </header>
-        <div class="w-full lg:w-9/12">
-            <!-- menu top -->
-            <section class="flex justify-end">
-                <BtnUserAdmin link="/admin/settings">
-                    Nome de Usuário
-                </BtnUserAdmin>
-            </section>
+        <div class="w-full lg:w-9/12 pt-16">
             <main>
-                <Paginator text="Programação" />
+                <Paginator text1="Evento" text="Certificados" />
                 <!-- conteudo -->
-               
             </main>
         </div>
     </div>
 </template>
 <script>
-import NavCompAdmin from "../../components/Navbar/NavCompAdmin.vue";
+import NavCompAdmin from "../../components/Navbar/NavDashEvent.vue";
 import BtnUserAdmin from "../../components/Navbar/BtnUserAdmin.vue";
 import BtnFooterAdmin from "../../components/Footer/BtnFooterAdmin.vue";
 import Paginator from "../../components/Commun/Paginator.vue";
