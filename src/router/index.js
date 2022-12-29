@@ -34,9 +34,34 @@ const router = createRouter({
       component: () => import('../views/Usuario/CategoriesView.vue')
     },
     {
-      path: '/admin',
-      name: 'admin',
-      component: () => import('../views/Admin/AdminView.vue')
+      path: '/admin/dashboard',
+      name: 'dashboard',
+      component: () => import('../views/Admin/DashboardView.vue')
+    },
+    {
+      path: '/admin/organization',
+      name: 'organization',
+      component: () => import('../views/Admin/OrganizationView.vue')
+    },
+    {
+      path: '/admin/inscription',
+      name: 'inscription',
+      component: () => import('../views/Admin/InscriptionView.vue')
+    },
+    {
+      path: '/admin/sales',
+      name: 'sales',
+      component: () => import('../views/Admin/SalesView.vue')
+    },
+    {
+      path: '/admin/cetificates',
+      name: 'cetificates',
+      component: () => import('../views/Admin/CertificatesView.vue')
+    },
+    {
+      path: '/admin/settings',
+      name: 'settings',
+      component: () => import('../views/Admin/SettingsView.vue')
     },
     {
       path: '/login',
@@ -53,7 +78,6 @@ const router = createRouter({
       name: 'page-not-found',
       component: () => import('../views/NotFound.vue')
     }
-
   ]
 })
 

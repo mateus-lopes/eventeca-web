@@ -1,6 +1,6 @@
 <template lang="">
     <li :class="style" @click="routerTo()">
-        <div :class="{'lg:text-primary underline underline-offset-8':check_navbar(), 'cursor-pointer lg:hover:text-primary':!this.links}">
+        <div :class="{'lg:text-primary underline underline-offset-8 transition-all ':check_navbar(), ' transition-all cursor-pointer lg:hover:text-primary lg:hover:underline underline-offset-8':!this.links}">
             <slot></slot>
         </div>
     </li>

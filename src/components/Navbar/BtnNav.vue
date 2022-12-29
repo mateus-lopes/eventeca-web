@@ -1,5 +1,5 @@
 <template lang="">
-    <button @click="routerTo()" :class="css" class="cursor-pointer">
+    <button @click="routerTo()" :class="css" class="cursor-pointer flex items-center justify-center">
             <slot></slot>
     </button>
 </template>
