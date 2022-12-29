@@ -3,7 +3,7 @@
         <swiper
             class="md:hidden"
             :slides-per-view="1"
-            :space-between="25"
+            :space-between="0"
             :modules="modules" 
         >
                         <swiper-slide>
@@ -25,7 +25,7 @@
         <swiper
             class="hidden md:block lg:hidden"
             :slides-per-view="3"
-            :space-between="25"
+            :space-between="0"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
             :modules="modules"  
@@ -49,7 +49,7 @@
         </swiper>
         <swiper
             class="hidden lg:block xl:hidden"
-            :space-between="25"
+            :space-between="0"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
             :slides-per-view="4"
@@ -75,7 +75,7 @@
         <swiper
             class="xl:block hidden"
             :slides-per-view="4"
-            :space-between="25"
+            :space-between="0"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
             :modules="modules"

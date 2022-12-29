@@ -1,19 +1,20 @@
 <template lang="">
     <div>
-        <header>
+        <!-- <header>
             <NavbarComp page_selection="help" />
-        </header>
+        </header> -->
         <main>
-            help
+            <HelpContainer></HelpContainer>
         </main>
-        <footer>
+        <!-- <footer>
             <Footer page_selection="help"></Footer>
-        </footer>
+        </footer> -->
     </div>
 </template>
 <script>
 import Footer from "../components/footer/FooterComp.vue";
 import NavbarComp from "../components/navbar/NavComp.vue";
+import HelpContainer from "../components/HelpContainer.vue";
 
 export default {
   data() {
@@ -23,6 +24,7 @@ export default {
   components: {
     NavbarComp,
     Footer,
+    HelpContainer,
 },
 }
 </script>

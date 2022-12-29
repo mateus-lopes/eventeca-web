@@ -3,7 +3,7 @@
         <TitleH2 :title="title" size="xl" />
         <ul class="flex flex-col gap-4">
             <div v-for="item in items">
-                <LiLink :link='computedLink(item.id)'>
+                <LiLink :links='links' :link='computedLink(item.id)'>
                     {{item.title}}
                 </LiLink>
             </div>

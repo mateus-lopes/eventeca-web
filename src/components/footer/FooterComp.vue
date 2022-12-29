@@ -1,5 +1,5 @@
 <template>
-    <main class="w-full mt-16  bg-secondary text-white">
+    <main class="w-full  bg-secondary text-white">
         <section class="container max-w-7xl mx-auto lg:flex gap-16 justify-between pt-16">
             <!-- img logo / social medias -->
             <div class="w-full lg:w-4/12">
@@ -15,7 +15,7 @@
                     <NavList :page_selection="page_selection" :nav_inline="false" ></NavList>
                 </div>
                 <!-- contact -->
-                <GenericList :links=false title="Contato" :items="contact"></GenericList>
+                <GenericList :links=true title="Contato" :items="contact"></GenericList>
             </div>
         </section>
         <section class="container max-w-7xl mx-auto md:flex justify-end pb-16 pt-8 lg:pt-0">

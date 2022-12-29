@@ -3,10 +3,11 @@
     <header>
         <NavbarComp page_selection="/" />
         <section class="container max-w-7xl mx-auto pt-3">
-          <InfoAlert></InfoAlert>
+          <InfoAlert text="/dev/ qq se acha desses info? coloquei pq mano n rola colocar setas nesses slider n encaixa de jeito nenhum, acho q assim fica baiano mas fica bom ao mesmo tempo"/>
+          <InfoAlert text="Desing Interativo, arraste para o lado com o mouse ou touch para navegar"/>
         </section>
     </header>
-    <main class="container max-w-7xl mx-auto">
+    <main class="container max-w-7xl mx-auto mb-20">
         <section class="mt-4">
             <CategoriesList></CategoriesList>
         </section>
@@ -14,7 +15,7 @@
             <TitleList>Eventos em Destaque</TitleList>
             <EventsSpecial></EventsSpecial>
         </section>
-        <section class="mt-16">
+        <section class="my-8">
             <TitleList>
               <router-link to="/teste">
                 Categoria 1
@@ -22,17 +23,16 @@
             </TitleList>
             <EventsList></EventsList>
         </section>
-        <section class="my-8">
+        <section>
             <TitleList>Categoria 2</TitleList>
             <EventsList></EventsList>
         </section>
-        <section class="mb-16">
+        <section class="mb-16 mt-8">
             <TitleList>Categoria 3</TitleList>
             <EventsList></EventsList>
         </section>
         <AdvantagesSection></AdvantagesSection>
-        <section class="mt-8">
-            <TitleList>Nossos Parceiros</TitleList>
+        <section class="mt-16">
             <FriendsSection></FriendsSection>
         </section>
     </main>

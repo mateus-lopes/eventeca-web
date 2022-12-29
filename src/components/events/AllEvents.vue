@@ -1,128 +1,43 @@
 <template lang="">
-    <div class="overflow-hidden rounded-xl flex mt-4">
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-    </div>
-    <div class="overflow-hidden rounded-xl flex mt-4">
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-    </div>
-    <div class="overflow-hidden rounded-xl flex mt-4">
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-    </div>
-    <div class="overflow-hidden rounded-xl flex mt-4">
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-    </div>
-    <div class="overflow-hidden rounded-xl flex mt-4">
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-    </div>
-    <div class="overflow-hidden rounded-xl flex mt-4">
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-    </div>
-    <div class="overflow-hidden rounded-xl flex mt-4">
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-    </div>
-    <div class="overflow-hidden rounded-xl flex mt-4">
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
-        <div class="p-5 bg-primary text-white">eventos</div>
+    <div class="overflow-hidden rounded-xl flex mt-4 flex-wrap">
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
+        <EventComp class="basis-1/2 lg:basis-1/4"></EventComp>
     </div>
 </template>
 <script>
+import EventComp from './EventComp.vue';
+
 export default {
-    
+    components: {
+        EventComp
+    },
 }
 </script>
 <style lang="">

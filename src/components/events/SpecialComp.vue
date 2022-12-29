@@ -1,8 +1,8 @@
 <template lang="">
     <div @click="goEvent" class="bg-white ">
         <div class="w-full relative">
-            <img src="../../assets/img/example2.jpg" class="md:hidden w-full h-96 rounded-xl" alt="">
-            <img src="../../assets/img/example2.jpg" class="hidden md:block h-96 w-full rounded-xl" alt="">
+            <img src="../../assets/img/example2.jpg" class="md:hidden w-full h-96 rounded-t-xl" alt="">
+            <img src="../../assets/img/example2.jpg" class="hidden md:block h-96 w-full rounded-t-xl" alt="">
         </div>
     </div>
     <!-- <img :src="returnImg()" class="cursor-pointer md:hidden w-full" alt=""> -->

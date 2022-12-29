@@ -17,9 +17,9 @@
 </script>
 <template>
     <div>
-        <div class="max-w-md">
+        <div class="max-w-md transition-all hover:pt-2">
             <div class="flex flex-col justify-center">
-                <div class="">
+                <div>
                     <Icon :content="icon" class="text-5xl"/>
                 </div>
                 <router-link to="/">
