@@ -3,6 +3,11 @@
         <section class="w-6/12 min-h-96 bg-white shadow-xl rounded-2xl flex overflow-hidden">
             <div class="p-8 px-12 w-full flex flex-col justify-center">
                 <TitleH1 title="Logar como Adminstrador" size="4xl" color="gray-400" />
+                <router-link to="/login">
+                    <div class="block text-sm text-primary pb-4">
+                        Mudar para login de Usuário
+                    </div>
+                </router-link>
                 <FormLogin />
                 <div class="flex flex-col md:flex-row justify-between gap-6">
                     <div class="w-full">

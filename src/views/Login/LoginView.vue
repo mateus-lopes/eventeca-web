@@ -1,11 +1,19 @@
 <template lang="">
-    <div class="w-full h-screen bg-gray-100 flex justify-center items-center">
+    <div class="w-full h-screen bg-gray-100 flex flex-col justify-center items-center">
+        <section class="flex w-10/12">
+            
+        </section>
         <section class="w-10/12 min-h-96 bg-white shadow-xl rounded-2xl flex overflow-hidden">
             <div class="bg-primary hidden lg:w-5/12 lg:flex justify-center items-center">
                 <img src="../../assets/img/form-login.svg" class="w-full p-24" alt="">
             </div>
             <div class="p-8 px-12 w-full lg:w-7/12 flex flex-col justify-center">
                 <TitleH1 title="Formualrio de Login" size="4xl" color="gray-400" />
+                <router-link to="admin/login">
+                    <div class="block text-sm text-primary pb-4">
+                        Mudar para login de Administrador
+                    </div>
+                </router-link>
                 <FormLogin />
                 <div class="flex flex-col md:flex-row justify-between gap-6">
                     <div class="flex flex-col md:flex-row md:gap-8 gap-4">

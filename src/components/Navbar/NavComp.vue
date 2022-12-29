@@ -93,8 +93,8 @@ export default {
           <div class="flex items-center">
             <!-- btn create event ( click -> dashboard-admin ) -->
             <div class="hidden md:flex items-center">
-              <BtnNav link="/admin/login" :stroke=true>
-                Criar Evento
+              <BtnNav link="/create-account" :stroke=true>
+                  Criar uma Conta
               </BtnNav>
               <div class="w-0.5 h-10 mx-5 bg-gray-200 "></div>
             </div>
